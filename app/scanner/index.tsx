@@ -89,12 +89,14 @@ export default function ScannerScreen() {
   return (
     <View style={styles.container}>
       <CameraView
-        style={styles.camera}
+        style={StyleSheet.absoluteFill}
         facing="back"
         enableTorch={flash}
         onBarcodeScanned={scanned ? undefined : handleBarCodeScanned}
         barcodeScannerSettings={{ barcodeTypes: ['qr'] }}
-      >
+      />
+
+      <View style={styles.contentOverlay} pointerEvents="box-none">
         {/* Header */}
         <View style={[styles.header, { paddingTop: Math.max(insets.top, 20) }]}>
           <TouchableOpacity style={styles.iconButton} onPress={() => router.back()}>
@@ -105,8 +107,8 @@ export default function ScannerScreen() {
         </View>
 
         {/* Scan frame overlay */}
-        <View style={styles.overlay}>
-          <View style={styles.scanFrame}>
+        <View style={styles.overlay} pointerEvents="box-none">
+          <View style={styles.scanFrame} pointerEvents="box-none">
             <View style={[styles.corner, styles.topLeft]} />
             <View style={[styles.corner, styles.topRight]} />
             <View style={[styles.corner, styles.bottomLeft]} />
@@ -153,7 +155,7 @@ export default function ScannerScreen() {
             </TouchableOpacity>
           </View>
         </View>
-      </CameraView>
+      </View>
     </View>
   );
 }
@@ -194,6 +196,10 @@ const styles = StyleSheet.create({
     color: 'rgba(255,255,255,0.6)',
     fontFamily: FONTS.sansMedium,
     fontSize: SIZES.medium,
+  },
+  contentOverlay: {
+    ...StyleSheet.absoluteFillObject,
+    justifyContent: 'space-between',
   },
   camera: {
     flex: 1,
