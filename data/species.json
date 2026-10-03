@@ -1,0 +1,55 @@
+[
+  {
+    "id": "leopard",
+    "commonName": "Sri Lankan Leopard",
+    "scientificName": "Panthera pardus kotiya",
+    "category": "Mammals",
+    "conservationStatus": "Endangered",
+    "populationEstimate": "~700 left",
+    "mainHabitat": "Rainforests",
+    "description": "The Sri Lankan leopard is the island's apex predator, ruling both dry scrubs and cloudy mountain hills. Highly solitary and masterfully camouflaged, they play a critical role in managing herbivore numbers, keeping Sri Lanka's unique ecosystems in perfect, delicate balance.",
+    "imageUrls": {
+      "hero": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?q=80&w=800&auto=format&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1629813292415-3fb8f30d0758?q=80&w=400&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1558504381-80f4f7281f6d?q=80&w=400&auto=format&fit=crop"
+      ]
+    },
+    "modelUrl": "Leopard.glb",
+    "shortBlurb": "A master of camouflage unique to the island's coastal dry scrublands and rainforests."
+  },
+  {
+    "id": "langur",
+    "commonName": "Purple-faced Langur",
+    "scientificName": "Semnopithecus vetulus",
+    "category": "Mammals",
+    "conservationStatus": "Critically Endangered",
+    "populationEstimate": "Declining",
+    "mainHabitat": "Wet zone canopy",
+    "description": "An incredible long-tailed leaf-eating monkey found only in Sri Lanka's closed canopy forests. Their haunting, loud whooping calls can be heard echoing through the dense woods at dawn.",
+    "imageUrls": {
+      "hero": "https://images.unsplash.com/photo-1534008897995-27a23e859048?q=80&w=600&auto=format&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1582298538104-1b1511195610?q=80&w=400&auto=format&fit=crop"
+      ]
+    },
+    "modelUrl": "Langur.glb",
+    "shortBlurb": "An incredible leaf-eating monkey found only in dense wet zone forests."
+  },
+  {
+    "id": "pangolin",
+    "commonName": "Sri Lankan Pangolin",
+    "scientificName": "Manis crassicaudata",
+    "category": "Mammals",
+    "conservationStatus": "Vulnerable",
+    "populationEstimate": "Unknown",
+    "mainHabitat": "Lowland rainforest floor",
+    "description": "Also known as the Indian Pangolin, this elusive, scaly anteater is a primarily nocturnal creature. Sadly, they are highly threatened due to illegal poaching for their scales and meat.",
+    "imageUrls": {
+      "hero": "https://upload.wikimedia.org/wikipedia/commons/9/9d/IndianPangolin.jpg",
+      "gallery": []
+    },
+    "modelUrl": "Pangolin.glb",
+    "shortBlurb": "A rare, armored mammal threatened by illegal poaching."
+  }
+]

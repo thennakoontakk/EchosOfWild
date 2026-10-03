@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "headline": "New Tracking Program Implemented in Sinharaja Forest",
+    "date": "Oct 24, 2023",
+    "readTime": "4 min read",
+    "thumbnail": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?q=80&w=300&auto=format&fit=crop",
+    "url": "https://www.dwc.gov.lk/en/"
+  },
+  {
+    "id": "2",
+    "headline": "Three Endangered Pangolins Rescued and Released back to the Wild",
+    "date": "Oct 20, 2023",
+    "readTime": "3 min read",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/9/9d/IndianPangolin.jpg",
+    "url": "https://www.dwc.gov.lk/en/"
+  }
+]

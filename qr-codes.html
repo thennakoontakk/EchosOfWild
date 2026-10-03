@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang=en>
+<head>
+  <meta charset=UTF-8 />
+  <title>Wildlife AR QR Codes - Echoes</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    h1 { margin-bottom: 8px; color: #facc15; }
+    p.subtitle { color: #94a3b8; margin-bottom: 36px; text-align: center; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+      max-width: 1000px;
+      width: 100%;
+    }
+    .card {
+      background: #1e293b;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+    .card h2 { margin: 12px 0 4px; font-size: 1.25rem; color: #fff; }
+    .card .status {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    .endangered { background: rgba(239, 68, 68, 0.2); color: #f87171; }
+    .critically { background: rgba(220, 38, 38, 0.3); color: #fca5a5; }
+    .vulnerable { background: rgba(234, 179, 8, 0.2); color: #fde047; }
+    .qr-box {
+      background: white;
+      padding: 16px;
+      border-radius: 12px;
+      display: inline-block;
+    }
+    .qr-box img {
+      display: block;
+      width: 200px;
+      height: 200px;
+    }
+    .raw-data {
+      margin-top: 14px;
+      font-family: monospace;
+      font-size: 0.85rem;
+      background: rgba(0,0,0,0.3);
+      padding: 6px 12px;
+      border-radius: 6px;
+      color: #38bdf8;
+    }
+  </style>
+</head>
+<body>
+  <h1>Echoes Wildlife AR QR Codes</h1>
+  <p class=subtitle>Scan these QR codes using the Echoes App Scanner to view the 3D models in Augmented Reality.</p>
+
+  <div class=grid>
+    <div class=card>
+      <div class=qr-box>
+        <img src=https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=leopard alt=Leopard QR />
+      </div>
+      <h2>Sri Lankan Leopard</h2>
+      <span class=status endangered>Endangered</span>
+      <div class=raw-data>QR Content: leopard</div>
+    </div>
+
+    <div class=card>
+      <div class=qr-box>
+        <img src=https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=langur alt=Langur QR />
+      </div>
+      <h2>Purple-faced Langur</h2>
+      <span class=status critically>Critically Endangered</span>
+      <div class=raw-data>QR Content: langur</div>
+    </div>
+
+    <div class=card>
+      <div class=qr-box>
+        <img src=https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=pangolin alt=Pangolin QR />
+      </div>
+      <h2>Sri Lankan Pangolin</h2>
+      <span class=status vulnerable>Vulnerable</span>
+      <div class=raw-data>QR Content: pangolin</div>
+    </div>
+  </div>
+</body>
+</html>
